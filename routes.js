@@ -20,6 +20,11 @@
 			.state('contact', {
 				url: '/contact',
 				templateUrl: '<h1>Contact</h1>'
+			})
+			.state('product', {
+			    url: '/product/:id',
+			    controller: 'ProductDetail',
+			    templateUrl: 'views/product_detail.html'
 			});
 	});
 })(window.angular);
