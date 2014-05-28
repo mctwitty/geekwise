@@ -21,7 +21,7 @@
       </div>
       </div>
       <div class="small">
-      <div class="three" ng-repeat="product in featuredProducts | limitTo:4" ng-if="$index != 0">
+      <div class="three" ng-repeat="product in featuredProducts | limitTo:4" ng-if="!$first">
           <div class="featured_small">
             <div class="prod_img">
             <img src="http://i.imgur.com/qyk1gD3.jpg"/>

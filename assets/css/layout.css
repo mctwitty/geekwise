@@ -154,7 +154,7 @@ body {
   border-top: 0px solid transparent;
   border-bottom: 20px solid transparent;
   border-left: 2em solid #ff511d;
-  z-index:-3;
+  z-index:-1;
 }
 @media (max-width:600px){
   .featured .full,

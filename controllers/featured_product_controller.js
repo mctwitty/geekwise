@@ -7,7 +7,7 @@
 		 ProductService.getProducts().then(
 		 	function(response) {
 		 		angular.forEach(response.data, function(product) {
-		 			if (product.isFeatured === true) {
+		 			if (product.isFeatured) {
 		 				$scope.featuredProducts.push(product);
 		 			};
 		 		});
