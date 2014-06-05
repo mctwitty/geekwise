@@ -26,6 +26,13 @@ module.exports = function(app) {
 			res.send(products);
 		});
 	});
+	app.get('/api/featuredproducts', function(req, res) {
+		mongoose.model('Product').find({isFeatured: true}, function(err, products) {
+			if (err) res.send(err);
+
+			res.send(products);
+		});
+	});
 	
  
 	// route to handle creating (app.post)

@@ -12,6 +12,9 @@
 			},
 			getProductFilters: function () {
 				return $http.get('assets/json/product_filters.json');
+			},
+			getFeaturedProducts: function() {
+				return $http.get('/api/featuredproducts');
 			}
 		};
 	});
