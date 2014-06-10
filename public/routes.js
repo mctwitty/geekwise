@@ -26,6 +26,11 @@
 			    url: '/product/:id',
 			    controller: 'ProductDetail',
 			    templateUrl: 'views/product_detail.html'
+			})
+			.state('cart', {
+				url: '/cart',
+				controller: 'CartController',
+				templateUrl: 'views/cart.html'
 			});
 	});
 })(window.angular);

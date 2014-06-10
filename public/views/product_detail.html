@@ -1,5 +1,5 @@
+<ms-mini-cart></ms-mini-cart>
 <div class="row">
-
     <div class="col-sm-3">
         <img ng-src="{{product.picture}}" ng-alt="{{product.title}}">
     </div>
@@ -11,7 +11,7 @@
         <p ng-show="product.isSpecial == true" ng-bind="product.specialPrice"></p>
         <p ng-bind="product.description"></p>
         <div>
-            <button type="button" class="btn btn-primary">To Cart</button>
+            <ms-add-cart-button product="product">To Cart</ms-add-cart-button>
         </div>
     </div>
 </div>

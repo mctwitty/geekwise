@@ -20,7 +20,15 @@ module.exports = function(app) {
 	});
 	// products api route
 	app.get('/api/products', function(req, res) {
-		mongoose.model('Product').find(function(err, products) {
+		
+		var params = {};
+
+		if (req.query.featuredproducts !== undefined) {
+			params.isFeatured = req.query.featuredproducts;
+		}
+		mongoose.model('Product').find(params, function(err, products) {
+
+
 			if(err) res.send(err);
 
 			res.send(products);
