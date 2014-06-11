@@ -4,7 +4,7 @@
 	var app = angular.module('MyStore');
  
 	// Inject in the CartService
-	app.directive('msMiniCart', function() {
+	app.directive('msMiniCart', function(CartService) {
  
 		return {
 			scope: {
@@ -16,12 +16,12 @@
  
 				scope.cartSubtotal = function() {
 					// Returns the subtotal from the CartService
- 
+ 					return CartService.getCartSubtotal();
 				};
  
-				scope.itemCount = function() {
+				scope.getItemCount = function() {
 					// Return the item count from the CartService
-					return 1; // static value to display cart temporarily
+					return CartService.getItemCount(); // static value to display cart temporarily
 				};
 			}
  
