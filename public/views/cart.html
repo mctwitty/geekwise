@@ -40,7 +40,7 @@
 				<td class="col-sm-1 col-md-1 text-center"><strong>{{item.isSpecial ? item.specialPrice : item.price | currency}}</strong></td>
 				<td class="col-sm-1 col-md-1 text-center"><strong>{{item.isSpecial ? item.specialPrice * item.quantity : item.price * item.quantity | currency}}</strong></td>
 				<td class="col-sm-1 col-md-1">
-					<button type="button" class="btn btn-danger" ng-click="removeItem()">
+					<button type="button" class="btn btn-danger" ng-click="removeItem(item.guid)">
 						<span class="glyphicon glyphicon-remove"></span> Remove
 					</button>
 				</td>

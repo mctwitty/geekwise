@@ -31,6 +31,16 @@
 				url: '/cart',
 				controller: 'CartController',
 				templateUrl: 'views/cart.html'
+			})
+			.state('login', {
+				url: '/login',
+				controller: 'LoginController',
+				templateUrl: 'views/login.html'
+			})
+			.state('signup', {
+				url: '/signup',
+				controller: 'SignupController',
+				templateUrl: 'views/signup.html'
 			});
 	});
 })(window.angular);

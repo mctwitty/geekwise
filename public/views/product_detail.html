@@ -7,8 +7,8 @@
     <div class="col-sm-9">
         <div class="alert alert-danger" ng-show="product.inventory === 0"><strong>This item is currently unavailable</strong></div>
         <h2 ng-bind="product.title"></h2>
-        <p ng-class="{old: product.isSpecial}" ng-bind="product.price"></p>
-        <p ng-show="product.isSpecial == true" ng-bind="product.specialPrice"></p>
+        <p ng-class="{old: product.isSpecial}" ng-bind="product.price | currency"></p>
+        <p ng-show="product.isSpecial == true" ng-bind="product.specialPrice | currency"></p>
         <p ng-bind="product.description"></p>
         <div>
             <ms-add-cart-button product="product">To Cart</ms-add-cart-button>
