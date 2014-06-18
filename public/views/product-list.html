@@ -35,7 +35,7 @@
 				  <!-- Product title -->
 					<h2 ng-bind='product.title'></h2>
 					<!-- Conditional old class -->
-					<p ng-bind="product.price"></p>
+					<p ng-bind="product.price | currency"></p>
 					<!-- Conditionally show special price -->
 					<p></p>
 					<div class="description" ng-bind='product.description'>

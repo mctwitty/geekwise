@@ -14,25 +14,15 @@
 	    $scope.cartSubtotal 	= CartService.getCartSubtotal;
 	    $scope.cartTotal 		= CartService.getCartTotal;
  
-	   //  $scope.addItem = function(item) {
-		  //   // Add the item using the CartService
- 			// CartService.addItem(item);
-	   //  };
- 
-	   //  $scope.removeItem = function(item) {
-		  //   // Remove the item using the CartService
- 			// CartService.removeItem(item);
-	   //  };
- 
-	   //  $scope.cartSubtotal = function() {
-		  //   // Returns the cartSubtotal from the CartService
- 			// CartService.getCartSubtotal();
-	   //  };
- 
-	   //  $scope.cartTotal = function() {
-		  //   // Returns the cartTotal from the CartService
-		  //   CartService.getCartTotal();
-	   //  };
+	  	// $scope.$watchCollection('items', function(newItems, oldItems) {
+	  	// 	if(newItems) {
+	  	// 		angular.forEach(newItems, function(item,key) {
+		  // 			if(item.quantity == 0 || item.quantity == '') {
+		  // 				CartService.removeItem(item.guid);
+	  	// 			}
+	  	// 		});
+	  	// 	}
+	  	// });
  
     });
  

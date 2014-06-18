@@ -12,10 +12,10 @@
         
         $scope.product;
         // Get the products from the product service
-        ProductService.getProducts().then(function(response) {
+        ProductService.getProduct(product_guid).then(function(response) {
 
             // Add the resulting array of products to a local products variable
-            var products = response.data;
+            $scope.product = response.data;
 
             // Loop through the products array using Angular's built-in forEach function
             angular.forEach(products, function(product) {
